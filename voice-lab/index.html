@@ -632,6 +632,202 @@
             .seal-wrapper { align-self: flex-end; }
             .stage-selector { flex-direction: column; }
         }
+
+        /* Pastoral Outreach Welcome Banner */
+        .pastor-welcome-banner {
+            background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+            border: 1px solid #bfdbfe;
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 24px;
+            color: #1e3a8a;
+        }
+        body.dark-mode .pastor-welcome-banner {
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            border-color: #334155;
+            color: #e2e8f0;
+        }
+        .welcome-badge {
+            display: inline-block;
+            background: #2563eb;
+            color: #ffffff;
+            font-size: 0.8rem;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 20px;
+            margin-bottom: 10px;
+        }
+        .welcome-title {
+            font-size: 1.35rem;
+            font-weight: 800;
+            color: #1e3a8a;
+            margin-bottom: 8px;
+            line-height: 1.3;
+        }
+        body.dark-mode .welcome-title { color: #93c5fd; }
+        .welcome-desc {
+            font-size: 0.92rem;
+            color: #334155;
+            line-height: 1.6;
+            margin-bottom: 18px;
+        }
+        body.dark-mode .welcome-desc { color: #cbd5e1; }
+        .steps-container {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        .step-card {
+            flex: 1;
+            min-width: 160px;
+            background: #ffffff;
+            border: 1px solid #bfdbfe;
+            border-radius: 12px;
+            padding: 12px 14px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+        }
+        body.dark-mode .step-card {
+            background: #1e293b;
+            border-color: #334155;
+        }
+        .step-num {
+            font-size: 0.72rem;
+            font-weight: 800;
+            color: #2563eb;
+            margin-bottom: 2px;
+        }
+        body.dark-mode .step-num { color: #60a5fa; }
+        .step-txt {
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: #1e293b;
+            line-height: 1.35;
+        }
+        body.dark-mode .step-txt { color: #f1f5f9; }
+        .step-arrow {
+            font-size: 1rem;
+            color: #60a5fa;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Overall Grade Banner */
+        .overall-grade-banner {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            background: #f0fdf4;
+            border: 1.5px solid #86efac;
+            border-radius: 14px;
+            padding: 16px 20px;
+            margin-bottom: 20px;
+        }
+        body.dark-mode .overall-grade-banner {
+            background: #064e3b22;
+            border-color: #059669;
+        }
+        .grade-badge {
+            display: inline-flex;
+            align-items: center;
+            font-size: 1.15rem;
+            font-weight: 800;
+            background: #16a34a;
+            color: #ffffff;
+            padding: 8px 16px;
+            border-radius: 30px;
+            white-space: nowrap;
+            box-shadow: 0 2px 8px rgba(22, 163, 74, 0.3);
+        }
+        .grade-badge.badge-warn {
+            background: #d97706;
+            box-shadow: 0 2px 8px rgba(217, 119, 6, 0.3);
+        }
+        .grade-badge.badge-danger {
+            background: #dc2626;
+            box-shadow: 0 2px 8px rgba(220, 38, 38, 0.3);
+        }
+        .grade-desc {
+            font-size: 0.88rem;
+            line-height: 1.5;
+            color: #166534;
+        }
+        body.dark-mode .grade-desc { color: #a7f3d0; }
+
+        /* Health Checkup Table */
+        .health-table-card {
+            background: var(--bg-color);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 18px;
+            margin-bottom: 22px;
+        }
+        .table-title {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--text-main);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .table-responsive {
+            width: 100%;
+            overflow-x: auto;
+        }
+        .health-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.85rem;
+            text-align: left;
+        }
+        .health-table th {
+            background: var(--card-bg);
+            color: var(--text-dim);
+            font-weight: 600;
+            padding: 10px 12px;
+            border-bottom: 2px solid var(--border);
+            white-space: nowrap;
+        }
+        .health-table td {
+            padding: 12px;
+            border-bottom: 1px solid var(--border);
+            vertical-align: middle;
+        }
+        .status-pill {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            white-space: nowrap;
+        }
+        .pill-good {
+            background: #dcfce7;
+            color: #15803d;
+        }
+        body.dark-mode .pill-good {
+            background: #14532d;
+            color: #86efac;
+        }
+        .pill-warn {
+            background: #fef3c7;
+            color: #b45309;
+        }
+        body.dark-mode .pill-warn {
+            background: #78350f;
+            color: #fde68a;
+        }
+        .pill-danger {
+            background: #fee2e2;
+            color: #b91c1c;
+        }
+        body.dark-mode .pill-danger {
+            background: #7f1d1d;
+            color: #fca5a5;
+        }
+
     </style>
 </head>
 <body>
@@ -658,11 +854,64 @@
         <button class="btn-toggle-dark" onclick="toggleDarkMode()">🌓 다크모드</button>
     </div>
 
+    <!-- Pastoral Outreach Welcome Banner -->
+    <div class="pastor-welcome-banner">
+        <div class="welcome-badge">📢 한국 교회 목회자·사역자 무료 음성 정밀 건강검진</div>
+        <div class="welcome-title">"목사님의 설교 소리는 지금 건강한가요?"</div>
+        <div class="welcome-desc">
+            월요일마다 목이 쉬거나 아프신가요? 설교할 때 톤이 높아져 성도들이 피로해하나요?<br>
+            신대원에서도 배운 적 없는 <strong>내 설교 소리의 진짜 상태</strong>를 첨단 음향학 AI로 3초 만에 무료로 검진해 드립니다.
+        </div>
+        <div class="steps-container">
+            <div class="step-card">
+                <div class="step-num">STEP 1</div>
+                <div class="step-txt">설교 녹음 파일(m4a/mp3) 올리기 or 마이크 즉시 녹음</div>
+            </div>
+            <div class="step-arrow">➡️</div>
+            <div class="step-card">
+                <div class="step-num">STEP 2</div>
+                <div class="step-txt">AI 음향음성학 3초 정밀 계측 (F0/복식호흡/포만트)</div>
+            </div>
+            <div class="step-arrow">➡️</div>
+            <div class="step-card">
+                <div class="step-num">STEP 3</div>
+                <div class="step-txt">공식 『목회자 음성 종합 진단표』 및 1:1 맞춤 처방 발급</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Input Card -->
+    <div class="card" id="inputCard">
+        <div class="tab-nav">
+            <button class="tab-btn active" onclick="switchTab('file')">📁 내 음성 파일 정밀 진단 (PC·모바일 지원)</button>
+            <button class="tab-btn" onclick="switchTab('mic')">🎙️ 실시간 마이크 즉시 녹음</button>
+        </div>
+
+        <!-- File Upload Tab -->
+        <div id="fileTab">
+            <div class="drop-zone" id="dropZone" onclick="document.getElementById('audioFileInput').click()">
+                <div class="drop-icon">🎵</div>
+                <div class="drop-text">설교 음원 또는 성경 낭독 파일(m4a, mp3, wav)을 올려주세요</div>
+                <div class="drop-sub">클릭하여 파일 선택 또는 스마트폰/PC 녹음 파일을 여기로 끌어다 놓기 (즉시 1:1 맞춤 진단서 생성)</div>
+                <input type="file" id="audioFileInput" accept="audio/*,.m4a,.mp3,.wav,.aac,.ogg,.webm" style="display: none;" onchange="handleFileSelect(event)">
+            </div>
+        </div>
+
+        <!-- Mic Record Tab -->
+        <div id="micTab" style="display: none;">
+            <div class="record-box">
+                <div class="rec-timer" id="recTimer">00:00</div>
+                <button class="rec-btn" id="recBtn" onclick="toggleRecording()">🎙️</button>
+                <div class="drop-sub" id="recStatus">버튼을 누르고 설교나 성경 낭독을 1~3분간 말씀하세요</div>
+            </div>
+        </div>
+    </div>
+
     <!-- Live Benchmark Audio Player Banner (Clean Sample View) -->
     <div class="card player-banner">
         <div class="banner-title">
             <span>🎧</span>
-            <span>바른소리 표준 음성 벤치마크 (샘플 오디오)</span>
+            <span>🎧 [비교 벤치마크] 표준 강단 C3 설교 및 성경 낭독 모델 들어보기</span>
         </div>
         <div class="banner-desc">
             강단 설교 및 성경 낭독의 표준 음향음성학 모델입니다. 예시 오디오를 재생하며 피치 궤적을 비교하거나, 아래에서 내 음성 파일을 올려 1:1 맞춤 진단을 받으세요.
@@ -706,43 +955,75 @@
         <audio id="audioElement" src="sample_pastor.m4a" preload="auto"></audio>
     </div>
 
-    <!-- Input Card -->
-    <div class="card" id="inputCard">
-        <div class="tab-nav">
-            <button class="tab-btn active" onclick="switchTab('file')">📁 내 음성 파일 정밀 진단 (PC·모바일 지원)</button>
-            <button class="tab-btn" onclick="switchTab('mic')">🎙️ 실시간 마이크 즉시 녹음</button>
-        </div>
 
-        <!-- File Upload Tab -->
-        <div id="fileTab">
-            <div class="drop-zone" id="dropZone" onclick="document.getElementById('audioFileInput').click()">
-                <div class="drop-icon">🎵</div>
-                <div class="drop-text">설교 음원 또는 성경 낭독 파일(m4a, mp3, wav)을 올려주세요</div>
-                <div class="drop-sub">클릭하여 파일 선택 또는 스마트폰/PC 녹음 파일을 여기로 끌어다 놓기 (즉시 1:1 맞춤 진단서 생성)</div>
-                <input type="file" id="audioFileInput" accept="audio/*,.m4a,.mp3,.wav,.aac,.ogg,.webm" style="display: none;" onchange="handleFileSelect(event)">
-            </div>
-        </div>
-
-        <!-- Mic Record Tab -->
-        <div id="micTab" style="display: none;">
-            <div class="record-box">
-                <div class="rec-timer" id="recTimer">00:00</div>
-                <button class="rec-btn" id="recBtn" onclick="toggleRecording()">🎙️</button>
-                <div class="drop-sub" id="recStatus">버튼을 누르고 설교나 성경 낭독을 1~3분간 말씀하세요</div>
-            </div>
-        </div>
-    </div>
 
     <!-- Results Section (Official Certificate) -->
     <div class="card" id="resultsSection">
         <div class="result-header">
             <div class="result-title">
-                <h2>📋 음성·스피치 정밀 진단 결과서</h2>
+                <h2>📋 목회자 음성 종합 정밀 진단표 (Pastoral Voice Health Checkup Report)</h2>
                 <div class="result-serial" id="certSerial">발행번호: BSVL-BENCHMARK-001 · 분석 대상: 표준 강단 설교·낭독 벤치마크 예시</div>
             </div>
             <div class="share-actions">
                 <button class="action-btn" onclick="window.print()">🖨️ 공식 진단서 인쇄 (PDF)</button>
                 <button class="action-btn secondary" onclick="shareKakao()">🔗 카톡 공유</button>
+            </div>
+        </div>
+
+        <!-- Overall Grade Banner -->
+        <div class="overall-grade-banner" id="overallGradeBanner">
+            <div class="grade-badge" id="gradeBadge">🟢 종합 A+ (최우수 강단 모델)</div>
+            <div class="grade-desc" id="gradeDesc">
+                <strong>황금 C3 기저음 안착 & 견고한 횡격막 복식호흡 모델입니다.</strong><br>
+                성대 결절 위험이 극히 낮고, 중후한 흉성 공명으로 성도들의 청취 몰입도와 신뢰감이 탁월합니다.
+            </div>
+        </div>
+
+        <!-- 4 Core Health Checkup Table -->
+        <div class="health-table-card">
+            <div class="table-title">🩺 목회자 음성 4대 핵심 정밀 검진표</div>
+            <div class="table-responsive">
+                <table class="health-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 20%;">검진 영역</th>
+                            <th style="width: 18%;">내 실측치</th>
+                            <th style="width: 22%;">표준 정상 기준치</th>
+                            <th style="width: 15%;">판정</th>
+                            <th style="width: 25%;">임상 소견 및 목회적 영향</th>
+                        </tr>
+                    </thead>
+                    <tbody id="healthTableBody">
+                        <tr>
+                            <td><strong>🎯 강단 기저음 (F0)</strong></td>
+                            <td id="tblPitchVal"><strong>127.1 Hz</strong></td>
+                            <td>120 ~ 135 Hz (C3 도)</td>
+                            <td><span class="status-pill pill-good" id="tblPitchStatus">🟢 정상 안심</span></td>
+                            <td id="tblPitchDesc">중후한 흉성 바리톤. 성도 귀 피로도가 낮고 편안함.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>🫁 복식호흡 지탱력</strong></td>
+                            <td id="tblRespVal"><strong>96 점</strong></td>
+                            <td>80점 이상 (횡격막 복압)</td>
+                            <td><span class="status-pill pill-good" id="tblRespStatus">🟢 우수</span></td>
+                            <td id="tblRespDesc">월요일 성대결절 위험 극히 낮음. 호흡 심지가 탄탄함.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>📢 본당 공간 전달력</strong></td>
+                            <td id="tblClarVal"><strong>+8.8 dB</strong></td>
+                            <td>+5.0 dB 이상 (포만트)</td>
+                            <td><span class="status-pill pill-good" id="tblClarStatus">🟢 우수</span></td>
+                            <td id="tblClarDesc">본당 뒤편까지 자음이 명료하게 전달되며 웅얼거림 없음.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>⏱️ 설교 템포 & 쉼</strong></td>
+                            <td id="tblSpeedVal"><strong>3.9음절 / 쉼 18%</strong></td>
+                            <td>쉼 25 ~ 40% (말씀 여백)</td>
+                            <td><span class="status-pill pill-warn" id="tblSpeedStatus">🟡 관찰 주의</span></td>
+                            <td id="tblSpeedDesc">다소 빠른 템포. 성도들이 말씀을 곱씹을 묵상 쉼 필요.</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
 
@@ -988,15 +1269,22 @@
     }
 
     function copyKakaoReport() {
-        let text = latestReportText;
-        if (!text) {
-            text = `[바른소리 목회연구소 공식 진단서]\n\n기저음: ${document.getElementById('valPitch').textContent}\n복식호흡: ${document.getElementById('valRespiration').textContent}\n공간투사력: ${document.getElementById('valClarity').textContent}\n발화속도: ${document.getElementById('valSpeed').textContent}\n\n처방: ${document.getElementById('prescriptionText').innerText}\n\n연구소장 Happy Choi 배상`;
+        const pVal = document.getElementById('valPitch').textContent;
+        const rVal = document.getElementById('valRespiration').textContent;
+        const grade = document.getElementById('gradeBadge') ? document.getElementById('gradeBadge').textContent : 'A+ (우수)';
+        const serial = document.getElementById('certSerial').textContent;
+
+        const shareMsg = `[바른소리 목회연구소 - 목회자 음성 종합 정밀 진단표]\n\n🏛️ ${serial}\n⭐ 종합 판정: ${grade}\n🎯 강단 기저음: ${pVal}\n🫁 복식호흡 지탱력: ${rVal}\n\n"월요일마다 목이 쉬거나, 설교 톤이 높아져 성도들이 피로해하나요?"\n목사님의 설교 소리도 첨단 음향 AI로 1분 만에 무료 검진해 보세요!\n\n👉 바로 검진받기: https://happy1ch.github.io/voice-lab/\n- 설립: 최성광 목사 (문경 행복한교회)\n- 연구소장: Happy Choi`;
+
+        if (navigator.clipboard) {
+            navigator.clipboard.writeText(shareMsg).then(() => {
+                showToast('📋 진단표 & 초대 문구가 복사되었습니다! 동기 목사님 카톡에 붙여넣으세요.');
+            }).catch(() => {
+                prompt('아래 내용을 복사하여 카톡에 전달하세요:', shareMsg);
+            });
+        } else {
+            prompt('아래 내용을 복사하여 카톡에 전달하세요:', shareMsg);
         }
-        navigator.clipboard.writeText(text).then(() => {
-            showToast('📋 진단 리포트가 복사되었습니다! 카톡에 붙여넣으세요.');
-        }).catch(() => {
-            alert('복사 실패. 브라우저 권한을 확인하세요.');
-        });
     }
 
     function selectStage(stage) {
@@ -1060,6 +1348,113 @@
         drawPitchContour();
     }
 
+    function updateHealthTableAndGrade(pitch, pitchRange, respScore, clarity, speed, pausePct, fileName) {
+        const gradeBadge = document.getElementById('gradeBadge');
+        const gradeDesc = document.getElementById('gradeDesc');
+
+        const tblPitchVal = document.getElementById('tblPitchVal');
+        const tblPitchStatus = document.getElementById('tblPitchStatus');
+        const tblPitchDesc = document.getElementById('tblPitchDesc');
+
+        const tblRespVal = document.getElementById('tblRespVal');
+        const tblRespStatus = document.getElementById('tblRespStatus');
+        const tblRespDesc = document.getElementById('tblRespDesc');
+
+        const tblClarVal = document.getElementById('tblClarVal');
+        const tblClarStatus = document.getElementById('tblClarStatus');
+        const tblClarDesc = document.getElementById('tblClarDesc');
+
+        const tblSpeedVal = document.getElementById('tblSpeedVal');
+        const tblSpeedStatus = document.getElementById('tblSpeedStatus');
+        const tblSpeedDesc = document.getElementById('tblSpeedDesc');
+
+        if (!gradeBadge) return;
+
+        // 1. Pitch Logic
+        tblPitchVal.innerHTML = `<strong>${pitch.toFixed(1)} Hz</strong>`;
+        let pitchGood = false;
+        if (pitch > 170) {
+            tblPitchStatus.className = 'status-pill pill-danger';
+            tblPitchStatus.textContent = '🚨 고음 거상';
+            tblPitchDesc.textContent = '후두가 올라가 목을 조이고 있습니다. 성도 청취 피로 급증.';
+        } else if (pitch > 145) {
+            tblPitchStatus.className = 'status-pill pill-warn';
+            tblPitchStatus.textContent = '🟡 상기 주의';
+            tblPitchDesc.textContent = '평소보다 다소 톤이 높게 떠 있습니다. 닻내리기 필요.';
+        } else if (pitch >= 118) {
+            pitchGood = true;
+            tblPitchStatus.className = 'status-pill pill-good';
+            tblPitchStatus.textContent = '🟢 정상 안심';
+            tblPitchDesc.textContent = '황금 C3(128Hz 도) 적중. 중후하고 신뢰감 높은 흉성 바리톤.';
+        } else {
+            tblPitchStatus.className = 'status-pill pill-warn';
+            tblPitchStatus.textContent = '🟡 과침강 주의';
+            tblPitchDesc.textContent = '기저음이 지나치게 낮아 자음 전달력이 흐려질 수 있습니다.';
+        }
+
+        // 2. Respiration Logic
+        tblRespVal.innerHTML = `<strong>${respScore} 점</strong>`;
+        let respGood = false;
+        if (respScore >= 88) {
+            respGood = true;
+            tblRespStatus.className = 'status-pill pill-good';
+            tblRespStatus.textContent = '🟢 안심 우수';
+            tblRespDesc.textContent = '횡격막 복압 지탱 우수. 월요일 성대결절 위험 극히 낮음.';
+        } else if (respScore >= 78) {
+            respGood = true;
+            tblRespStatus.className = 'status-pill pill-good';
+            tblRespStatus.textContent = '🟢 양호';
+            tblRespDesc.textContent = '기본 복압 유지. 문장 끝 호흡 유지만 조금 더 신경 쓰세요.';
+        } else {
+            tblRespStatus.className = 'status-pill pill-danger';
+            tblRespStatus.textContent = '🚨 성대 위험';
+            tblRespDesc.textContent = '흉식호흡 의존. 목을 쥐어짜고 있어 성대 결절 및 쉰목 위험.';
+        }
+
+        // 3. Clarity Logic
+        tblClarVal.innerHTML = `<strong>${clarity}</strong>`;
+        tblClarStatus.className = 'status-pill pill-good';
+        tblClarStatus.textContent = '🟢 양호';
+        tblClarDesc.textContent = '스피커스 포만트 명료도 에너지가 본당 뒤편까지 도달함.';
+
+        // 4. Speed / Pause Logic
+        tblSpeedVal.innerHTML = `<strong>${speed} / 쉼 ${pausePct.toFixed(1)}%</strong>`;
+        let pauseGood = false;
+        if (pausePct < 22) {
+            tblSpeedStatus.className = 'status-pill pill-warn';
+            tblSpeedStatus.textContent = '🟡 쉼 부족';
+            tblSpeedDesc.textContent = '성도들이 말씀을 소화할 침묵의 여백 부족. 마침표 1초 쉼 필요.';
+        } else if (pausePct <= 45) {
+            pauseGood = true;
+            tblSpeedStatus.className = 'status-pill pill-good';
+            tblSpeedStatus.textContent = '🟢 이상적';
+            tblSpeedDesc.textContent = '방송 표준 호흡비(약 35%). 성도 몰입감과 설득력 극대화.';
+        } else {
+            tblSpeedStatus.className = 'status-pill pill-good';
+            tblSpeedStatus.textContent = '📜 웅변적 여운';
+            tblSpeedDesc.textContent = '깊은 침묵을 활용하는 장중한 템포입니다.';
+        }
+
+        // 5. Overall Grade Calculation
+        if (pitchGood && respGood && pauseGood) {
+            gradeBadge.className = 'grade-badge';
+            gradeBadge.textContent = '🟢 종합 A+ (최우수 강단 모델)';
+            gradeDesc.innerHTML = `<strong>성대 무리 없이 깊은 흉성 공명이 완벽히 형성된 강단 설교 모델입니다.</strong><br>회중의 신뢰감이 극대화되며, 장시간 설교에도 목에 무리가 가지 않는 건강한 발성입니다.`;
+        } else if (pitchGood && respGood) {
+            gradeBadge.className = 'grade-badge';
+            gradeBadge.textContent = '🟢 종합 A (우수 발성 모델)';
+            gradeDesc.innerHTML = `<strong>기저음과 복식호흡이 아주 탄탄한 건강한 목소리입니다.</strong><br>설교 중 마침표 여백(1초 묵상 쉼)과 턱 개구도만 살짝 보완하시면 완벽합니다.`;
+        } else if (!respGood) {
+            gradeBadge.className = 'grade-badge badge-danger';
+            gradeBadge.textContent = '🚨 종합 C (성대결절 위험 관찰)';
+            gradeDesc.innerHTML = `<strong>목에 힘이 과도하게 들어가 성대 피로가 누적되고 있습니다.</strong><br>월요일 목 쉼을 방지하기 위해 복식호흡과 130Hz 닻내리기 훈련이 시급합니다.`;
+        } else {
+            gradeBadge.className = 'grade-badge badge-warn';
+            gradeBadge.textContent = '🟡 종합 B (교정 권장)';
+            gradeDesc.innerHTML = `<strong>잠재력은 높으나 강단 긴장으로 소리가 다소 상기되어 있습니다.</strong><br>첫 문장 닻내리기와 턱 개구도를 통해 흉성 울림통을 열어주세요.`;
+        }
+    }
+
     function applyStageMetrics(stage, title, resp, pitch, clar, spd, dResp, dPitch, dClar, dSpd, presc) {
         document.getElementById('certSerial').textContent = `발행번호: BSVL-BENCHMARK-P${stage} · 분석 대상: ${title}`;
         document.getElementById('valRespiration').textContent = resp;
@@ -1071,6 +1466,10 @@
         document.getElementById('valSpeed').textContent = spd;
         document.getElementById('descSpeed').textContent = dSpd;
         document.getElementById('prescriptionText').innerHTML = presc;
+
+        const pNum = parseFloat(pitch) || 128;
+        const rNum = parseInt(resp) || 90;
+        updateHealthTableAndGrade(pNum, 50, rNum, clar, spd, 30, title);
     }
 
     function toggleAudioPlay() {
@@ -1442,13 +1841,15 @@
                 chkTxt4.textContent = `문장 사이 긴 침묵으로 깊은 여운을 주나, 설교 흐름이 늘어지지 않도록 긴장감을 조율하세요.`;
             }
 
-            // 3. Update Prescription Box
+            // 3. Update Prescription Box & Medical Table
+            updateHealthTableAndGrade(med, pitchRange, respScore, document.getElementById('valClarity').textContent, document.getElementById('valSpeed').textContent, pausePct, fileName);
+
             document.getElementById('prescriptionText').innerHTML = `
-                "<strong>[${escapeHtml(fileName)} 1:1 맞춤 처방]</strong> 
-                기저음 <strong>${med.toFixed(1)} Hz</strong>, 억양 변동폭 <strong>${pitchRange.toFixed(1)} Hz</strong>, 복식호흡 <strong>${respScore}점</strong>입니다. 
-                ${med > 165 ? '후두를 낮추기 위해 설교 첫 어절을 턱을 당겨 130Hz대로 낮게 시작하세요.' : '현재의 깊은 중저음 흉성을 유지하세요.'} 
-                ${pitchRange < 35 ? '핵심 단어에서 피치를 계단식으로 도약시켜 모노톤을 탈피하세요.' : '건강한 억양 굴곡이 잘 유지되고 있습니다.'} 
-                하단 연구소장 직인 도장을 누르면 전용 심층 해설서가 열립니다."
+                "<strong>[${escapeHtml(fileName)} 목회자 맞춤 3대 실전 처방]</strong><br>
+                1. <strong>[기저음 닻내리기]:</strong> ${med > 145 ? '설교 첫 문장을 턱을 살짝 당기고 130Hz대로 낮게 시작하여 후두 거상을 방지하세요.' : '현재의 깊고 중후한 128~130Hz C3 흉성 울림을 그대로 유지하세요.'}<br>
+                2. <strong>[턱-받침 조음 분리]:</strong> 받침(ㅇ, ㅂ, ㅁ)을 닫을 때 턱 전체를 닫지 말고, 턱은 800Hz 크기로 열어둔 채 혀/입술로만 받침을 닫으세요 (본당 뒤편까지 자음이 꽂히는 비결).<br>
+                3. <strong>[1초 묵상 쉼]:</strong> ${pausePct < 25 ? '마침표마다 턱을 툭 떨구며 1초간 복식호흡을 채워 성도들이 말씀을 소화할 여백을 주십시오.' : '현재의 성도 친화적 쉼(Pause) 배분이 아주 훌륭합니다.'}<br>
+                <span style=\"color: #dc2626; font-size: 0.85rem;\">👉 하단 붉은색 연구소장 직인 도장을 누르면 전용 심층 해설서가 열립니다.</span>"
             `;
 
             // 4. ★ DYNAMIC DEEP REPORT UPDATE (심층 해설서를 올린 파일에 맞춰 100% 동적 재작성!)
